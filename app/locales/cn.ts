@@ -4,7 +4,7 @@ const cn = {
   WIP: "该功能仍在开发中……",
   Error: {
     Unauthorized:
-      "请前往[设置](/#/settings)页填入你自己的 OpenAI API Key。/n 不知道如何获取 API 密钥？/n如果您可以在这里购买：https://s.yiios.com/",
+      "开始聊天前，请前往[设置](/#/settings)页填入你自己的 OpenAI API Key。 \n**不知道如何获取 OpenAI API Key？** \n您可以在这里购买：[https://s.yiios.com/](https://s.yiios.com/)\n如果需要联系维护者或与其他用户交流：\n![联系维护者](https://cardocr-1251789346.cos.ap-guangzhou.myqcloud.com/wx_qr.png)",
   },
   Auth: {
     Title: "需要密码",
@@ -207,8 +207,9 @@ const cn = {
       SubTitle: "当未压缩的历史消息超过该值时，将进行压缩",
     },
     Token: {
-      Title: "API Key",
-      SubTitle: "使用自己的 Key 可绕过密码访问限制",
+      Title: "API Key(必填)",
+      SubTitle:
+        "不知道如何获取 OpenAI API Key？您可以在浏览器中输入链接购买：https://s.yiios.com/",
       Placeholder: "OpenAI API Key",
     },
 
@@ -258,7 +259,8 @@ const cn = {
   },
   Store: {
     DefaultTopic: "新的聊天",
-    BotHello: "有什么可以帮你的吗",
+    BotHello:
+      "开始聊天前，请前往[设置](/#/settings)页填入你自己的 OpenAI API Key。 \n**不知道如何获取 OpenAI API Key？** \n您可以在这里购买：[https://s.yiios.com/](https://s.yiios.com/)\n如果需要联系维护者或与其他用户交流：\n![联系维护者](https://cardocr-1251789346.cos.ap-guangzhou.myqcloud.com/wx_qr.png)",
     Error: "出错了，稍后重试吧",
     Prompt: {
       History: (content: string) => "这是历史聊天总结作为前情提要：" + content,
