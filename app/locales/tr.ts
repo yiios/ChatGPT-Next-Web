@@ -6,6 +6,8 @@ const tr: PartialLocaleType = {
   Error: {
     Unauthorized:
       "Yetkisiz erişim, lütfen erişim kodunu ayarlar [sayfasından](/#/auth) giriniz.",
+    InsufficientQuota:
+      "You exceeded your current quota, please check your plan and billing details.",
   },
   ChatItem: {
     ChatItemCount: (count: number) => `${count} mesaj`,

@@ -7,6 +7,8 @@ const en: LocaleType = {
   Error: {
     Unauthorized:
       "Unauthorized access, please enter access code in [auth](/#/auth) page.",
+    InsufficientQuota:
+      "When your account limit runs out, please visit: [https://s.yiios.com](https://s.yiios.com) to repurchase.",
   },
   Auth: {
     Title: "Need Access Code",

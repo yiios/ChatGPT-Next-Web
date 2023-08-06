@@ -6,6 +6,8 @@ const bn: PartialLocaleType = {
   Error: {
     Unauthorized:
       "অননুমোদিত অ্যাক্সেস, অনুগ্রহ করে [অথোরাইজশন](/#/auth) পৃষ্ঠায় অ্যাক্সেস কোড ইনপুট করুন।",
+    InsufficientQuota:
+      "You exceeded your current quota, please check your plan and billing details.",
   },
   Auth: {
     Title: "একটি অ্যাক্সেস কোড প্রয়োজন",

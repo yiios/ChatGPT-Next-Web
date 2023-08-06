@@ -6,6 +6,8 @@ const jp: PartialLocaleType = {
   Error: {
     Unauthorized:
       "現在は未承認状態です。左下の設定ボタンをクリックし、アクセスパスワードかOpenAIのAPIキーを入力してください。",
+    InsufficientQuota:
+      "You exceeded your current quota, please check your plan and billing details.",
   },
   ChatItem: {
     ChatItemCount: (count: number) => `${count} 通のチャット`,

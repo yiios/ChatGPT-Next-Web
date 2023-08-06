@@ -6,6 +6,8 @@ const no: PartialLocaleType = {
   Error: {
     Unauthorized:
       "Du har ikke tilgang. [Vennlig oppgi tildelt adgangskode](/#/auth).",
+    InsufficientQuota:
+      "You exceeded your current quota, please check your plan and billing details.",
   },
   ChatItem: {
     ChatItemCount: (count: number) => `${count} meldinger`,

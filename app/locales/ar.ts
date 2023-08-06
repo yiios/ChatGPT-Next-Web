@@ -6,6 +6,8 @@ const ar: PartialLocaleType = {
   Error: {
     Unauthorized:
       "غير مصرح بالوصول، يرجى إدخال رمز الوصول [auth](/#/auth) في صفحة المصادقة.",
+    InsufficientQuota:
+      "You exceeded your current quota, please check your plan and billing details.",
   },
   Auth: {
     Title: "تحتاج إلى رمز الوصول",

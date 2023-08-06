@@ -6,6 +6,8 @@ const fr: PartialLocaleType = {
   Error: {
     Unauthorized:
       "Accès non autorisé, veuillez saisir le code d'accès dans la [page](/#/auth) des paramètres.",
+    InsufficientQuota:
+      "You exceeded your current quota, please check your plan and billing details.",
   },
   ChatItem: {
     ChatItemCount: (count: number) => `${count} messages en total`,

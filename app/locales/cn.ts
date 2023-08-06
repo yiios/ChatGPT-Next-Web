@@ -5,6 +5,8 @@ const cn = {
   Error: {
     Unauthorized:
       "开始聊天前，请前往[设置](/#/settings)页填入你自己的 OpenAI API Key。 \n**不知道如何获取 OpenAI API Key？** \n您可以在这里购买：[https://s.yiios.com/](https://s.yiios.com/)\n如果需要联系维护者或与其他用户交流：\n![联系维护者](https://cardocr-1251789346.cos.ap-guangzhou.myqcloud.com/wx_qr.png)",
+    InsufficientQuota:
+      "账号额度用尽，请访问：[https://s.yiios.com](https://s.yiios.com) 重新购买.",
   },
   Auth: {
     Title: "需要密码",

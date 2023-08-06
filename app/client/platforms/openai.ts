@@ -135,6 +135,10 @@ export class ChatGPTApi implements LLMApi {
                 responseTexts.push(Locale.Error.Unauthorized);
               }
 
+              if (res.status === 429) {
+                responseTexts.push(Locale.Error.InsufficientQuota);
+              }
+
               if (extraInfo) {
                 responseTexts.push(extraInfo);
               }

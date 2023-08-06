@@ -6,6 +6,8 @@ const vi: PartialLocaleType = {
   Error: {
     Unauthorized:
       "Truy cập chưa xác thực, vui lòng nhập mã truy cập trong trang cài đặt.",
+    InsufficientQuota:
+      "You exceeded your current quota, please check your plan and billing details.",
   },
   ChatItem: {
     ChatItemCount: (count: number) => `${count} tin nhắn`,

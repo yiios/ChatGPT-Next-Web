@@ -6,6 +6,8 @@ const cs: PartialLocaleType = {
   Error: {
     Unauthorized:
       "Neoprávněný přístup, zadejte přístupový kód na [stránce](/#/auth) nastavení.",
+    InsufficientQuota:
+      "You exceeded your current quota, please check your plan and billing details.",
   },
   ChatItem: {
     ChatItemCount: (count: number) => `${count} zpráv`,

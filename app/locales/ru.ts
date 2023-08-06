@@ -6,6 +6,8 @@ const ru: PartialLocaleType = {
   Error: {
     Unauthorized:
       "Несанкционированный доступ. Пожалуйста, введите код доступа на [странице](/#/auth) настроек.",
+    InsufficientQuota:
+      "You exceeded your current quota, please check your plan and billing details.",
   },
   ChatItem: {
     ChatItemCount: (count: number) => `${count} сообщений`,
