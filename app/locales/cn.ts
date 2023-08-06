@@ -4,7 +4,7 @@ const cn = {
   WIP: "该功能仍在开发中……",
   Error: {
     Unauthorized:
-      "访问密码不正确或为空，请前往[登录](/#/auth)页输入正确的访问密码，或者在[设置](/#/settings)页填入你自己的 OpenAI API Key。",
+      "请前往[设置](/#/settings)页填入你自己的 OpenAI API Key。/n 不知道如何获取 API 密钥？/n如果您可以在这里购买：https://s.yiios.com/",
   },
   Auth: {
     Title: "需要密码",
