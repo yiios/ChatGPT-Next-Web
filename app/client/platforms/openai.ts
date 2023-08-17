@@ -140,7 +140,9 @@ export class ChatGPTApi implements LLMApi {
               }
 
               if (res.status === 429) {
-                responseTexts.push(Locale.Error.InsufficientQuota);
+                responseTexts.push(
+                  "调用频繁或账号额度用尽。如果一分钟后重试仍然报错，请访问：[https://s.yiios.com](https://s.yiios.com) 重新购买.",
+                );
               }
 
               if (extraInfo) {
