@@ -1,14 +1,16 @@
+import { getClientConfig } from "../config/client";
 import { SubmitKey } from "../store/config";
 import { LocaleType } from "./index";
 
 // if you are adding a new translation, please use PartialLocaleType instead of LocaleType
+
+const isApp = !!getClientConfig()?.isApp;
 const en: LocaleType = {
   WIP: "Coming Soon...",
   Error: {
-    Unauthorized:
-      "Unauthorized access, please enter access code in [auth](/#/auth) page.",
-    InsufficientQuota:
-      "When your account limit runs out, please visit: [https://s.yiios.com](https://s.yiios.com) to repurchase.",
+    Unauthorized: isApp
+      ? "Invalid API Key, please check it in [Settings](/#/settings) page.\nplease visit: [https://s.yiios.com](https://s.yiios.com) to repurchase."
+      : "Unauthorized access, please enter your OpenAI API Key.\nplease visit: [https://s.yiios.com](https://s.yiios.com) to repurchase.",
   },
   Auth: {
     Title: "Need Access Code",

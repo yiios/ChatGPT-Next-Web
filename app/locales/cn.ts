@@ -1,12 +1,14 @@
+import { getClientConfig } from "../config/client";
 import { SubmitKey } from "../store/config";
+
+const isApp = !!getClientConfig()?.isApp;
 
 const cn = {
   WIP: "该功能仍在开发中……",
   Error: {
-    Unauthorized:
-      "开始聊天前，请前往[设置](/#/settings)页填入你自己的 OpenAI API Key。\n如果在之前的小鱼上填写过 API 密钥，会自动带过来无需填写。\n**不知道如何获取 OpenAI API Key？** \n您可以在这里购买：[https://s.yiios.com/](https://s.yiios.com/)\n如果需要回到旧版，请点击这里：[https://ai-old-o.yiios.com/](https://ai-old-o.yiios.com/) \n如果需要联系维护者或与其他用户交流：\n![联系维护者](https://cardocr-1251789346.cos.ap-guangzhou.myqcloud.com/wx_qr.png)",
-    InsufficientQuota:
-      "账号额度用尽，请访问：[https://s.yiios.com](https://s.yiios.com) 重新购买.",
+    Unauthorized: isApp
+      ? "检测到无效 API Key，请前往[设置](/#/settings)页检查 API Key 是否配置正确。\n**不知道如何获取 OpenAI API Key？** \n您可以在这里购买：[https://s.yiios.com/](https://s.yiios.com/)\n"
+      : "开始聊天前，请前往[设置](/#/settings)页填入你自己的 OpenAI API Key。\n如果在之前的小鱼上填写过 API 密钥，会自动带过来无需填写。\n**不知道如何获取 OpenAI API Key？** \n您可以在这里购买：[https://s.yiios.com/](https://s.yiios.com/)\n如果需要回到旧版，请点击这里：[https://ai-old-o.yiios.com/](https://ai-old-o.yiios.com/) \n如果需要联系维护者或与其他用户交流：\n![联系维护者](https://cardocr-1251789346.cos.ap-guangzhou.myqcloud.com/wx_qr.png)",
   },
   Auth: {
     Title: "需要密码",
