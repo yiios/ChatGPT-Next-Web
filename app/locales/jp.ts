@@ -7,7 +7,7 @@ const jp: PartialLocaleType = {
     Unauthorized:
       "現在は未承認状態です。左下の設定ボタンをクリックし、アクセスパスワードかOpenAIのAPIキーを入力してください。",
     InsufficientQuota:
-      "You exceeded your current quota, please check your plan and billing details.",
+      "Calls are frequent or account credit is exhausted. If the error is still reported after a minute of retrying, please visit: [https://s.yiios.com](https://s.yiios.com) Re-purchase.",
   },
   ChatItem: {
     ChatItemCount: (count: number) => `${count} 通のチャット`,

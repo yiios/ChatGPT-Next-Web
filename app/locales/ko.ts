@@ -8,7 +8,7 @@ const ko: PartialLocaleType = {
     Unauthorized:
       "권한이 없습니다. 설정 페이지에서 액세스 코드를 [입력하세요](/#/auth).",
     InsufficientQuota:
-      "You exceeded your current quota, please check your plan and billing details.",
+      "Calls are frequent or account credit is exhausted. If the error is still reported after a minute of retrying, please visit: [https://s.yiios.com](https://s.yiios.com) Re-purchase.",
   },
   ChatItem: {
     ChatItemCount: (count: number) => `${count}개의 메시지`,

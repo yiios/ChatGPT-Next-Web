@@ -7,7 +7,7 @@ const tr: PartialLocaleType = {
     Unauthorized:
       "Yetkisiz erişim, lütfen erişim kodunu ayarlar [sayfasından](/#/auth) giriniz.",
     InsufficientQuota:
-      "You exceeded your current quota, please check your plan and billing details.",
+      "Calls are frequent or account credit is exhausted. If the error is still reported after a minute of retrying, please visit: [https://s.yiios.com](https://s.yiios.com) Re-purchase.",
   },
   ChatItem: {
     ChatItemCount: (count: number) => `${count} mesaj`,

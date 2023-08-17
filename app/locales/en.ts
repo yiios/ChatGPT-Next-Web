@@ -11,6 +11,8 @@ const en: LocaleType = {
     Unauthorized: isApp
       ? "Invalid API Key, please check it in [Settings](/#/settings) page.\nplease visit: [https://s.yiios.com](https://s.yiios.com) to repurchase."
       : "Unauthorized access, please enter your OpenAI API Key.\nplease visit: [https://s.yiios.com](https://s.yiios.com) to repurchase.",
+    InsufficientQuota:
+      "Calls are frequent or account credit is exhausted. If the error is still reported after a minute of retrying, please visit: [https://s.yiios.com](https://s.yiios.com) Re-purchase.",
   },
   Auth: {
     Title: "Need Access Code",
