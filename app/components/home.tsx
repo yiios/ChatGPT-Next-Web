@@ -171,33 +171,14 @@ function Screen() {
 
 export function useLoadData() {
   const config = useAppConfig();
-  const accessStore = useAccessStore();
-  const SECRET_KEY =
-    "64787423c7ea99e608bab61303b309a996a1e000db87bd73533bd979892b1644";
-  const APIKeyLocalKey = "light_gpt_api_key";
 
   useEffect(() => {
     (async () => {
       const models = await api.llm.models();
       config.mergeModels(models);
-      const light_gpt_api_key =
-        window.localStorage.getItem(APIKeyLocalKey) || "";
-      const decryptedApiKey = decryptApiKey(light_gpt_api_key);
-      if (decryptedApiKey !== "") {
-        // 不显示设置过的api_key
-        accessStore.updateToken(decryptedApiKey);
-        window.localStorage.setItem(APIKeyLocalKey, "");
-      }
     })();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
-
-  const decryptApiKey = (encryptedApiKey: string) => {
-    // 使用AES加密算法进行解密
-    const bytes = CryptoJS.AES.decrypt(encryptedApiKey, SECRET_KEY);
-    const decryptedApiKey = bytes.toString(CryptoJS.enc.Utf8);
-    return decryptedApiKey;
-  };
 }
 
 export function Home() {
