@@ -33,7 +33,8 @@ export class ChatGPTApi implements LLMApi {
 
     if (openaiUrl.length === 0) {
       const isApp = !!getClientConfig()?.isApp;
-      openaiUrl = isApp ? DEFAULT_API_HOST : apiPath;
+      // openaiUrl = isApp ? DEFAULT_API_HOST : apiPath;
+      openaiUrl = DEFAULT_API_HOST;
     }
     if (openaiUrl.endsWith("/")) {
       openaiUrl = openaiUrl.slice(0, openaiUrl.length - 1);
