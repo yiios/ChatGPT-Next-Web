@@ -260,13 +260,6 @@ const cn = {
       Title: "历史消息长度压缩阈值",
       SubTitle: "当未压缩的历史消息超过该值时，将进行压缩",
     },
-    Token: {
-      Title: "⭐️ API 密钥(必填)",
-      SubTitle:
-        "不知道如何获取 OpenAI API 密钥？您可以在浏览器中输入链接购买：https://s.yiios.com/",
-      Placeholder: "OpenAI API 密钥",
-    },
-
     Usage: {
       Title: "余额查询",
       SubTitle(used: any, total: any) {
@@ -293,9 +286,10 @@ const cn = {
       },
       OpenAI: {
         ApiKey: {
-          Title: "API Key",
-          SubTitle: "使用自定义 OpenAI Key 绕过密码访问限制",
-          Placeholder: "OpenAI API Key",
+          Title: "⭐️ API 密钥(必填)",
+          SubTitle:
+            "不知道如何获取 OpenAI API 密钥？您可以在浏览器中输入链接购买：https://s.yiios.com",
+          Placeholder: "OpenAI API 密钥",
         },
 
         Endpoint: {
