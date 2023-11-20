@@ -10,6 +10,8 @@ const pt: LocaleType = {
     Unauthorized: isApp
       ? "Chave API inválida, por favor verifique em [Configurações](/#/settings)."
       : "Acesso não autorizado, por favor insira o código de acesso em [auth](/#/auth) ou insira sua Chave API OpenAI.",
+    InsufficientQuota:
+      "Calls are frequent or account credit is exhausted. If the error is still reported after a minute of retrying, please visit: [https://s.yiios.com](https://s.yiios.com) Re-purchase.",
   },
   Auth: {
     Title: "Necessário Código de Acesso",

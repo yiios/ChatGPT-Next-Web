@@ -6,6 +6,8 @@ const id: PartialLocaleType = {
   Error: {
     Unauthorized:
       "Akses tidak diizinkan, silakan masukkan kode akses atau masukkan kunci API OpenAI Anda. di halaman [autentikasi](/#/auth) atau di halaman [Pengaturan](/#/settings).",
+    InsufficientQuota:
+      "Calls are frequent or account credit is exhausted. If the error is still reported after a minute of retrying, please visit: [https://s.yiios.com](https://s.yiios.com) Re-purchase.",
   },
   Auth: {
     Title: "Diperlukan Kode Akses",
