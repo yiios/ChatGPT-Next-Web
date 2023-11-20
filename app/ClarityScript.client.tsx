@@ -26,3 +26,5 @@ export const ClarityScript = () => {
 
   return null; // 如果不需要渲染任何东西
 };
+
+export default ClarityScript;

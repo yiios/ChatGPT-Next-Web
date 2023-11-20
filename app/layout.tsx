@@ -4,7 +4,7 @@ import "./styles/markdown.scss";
 import "./styles/highlight.scss";
 import { getClientConfig } from "./config/client";
 import { type Metadata } from "next";
-import { ClarityScript } from "./ClarityScript";
+import { ClarityScript } from "./ClarityScript.client";
 
 export const metadata: Metadata = {
   title: "小鱼智能客服",
