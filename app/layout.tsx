@@ -4,10 +4,8 @@ import "./styles/markdown.scss";
 import "./styles/highlight.scss";
 import { getClientConfig } from "./config/client";
 import { type Metadata } from "next";
+import { ClarityScript } from "./ClarityScript";
 import dynamic from "next/dynamic";
-const ClientOnlyComponent = dynamic(() => import("./ClarityScript.client"), {
-  ssr: false,
-});
 
 export const metadata: Metadata = {
   title: "小鱼智能客服",
@@ -38,7 +36,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <meta name="config" content={JSON.stringify(getClientConfig())} />
         <link rel="manifest" href="/site.webmanifest"></link>
         <script src="/serviceWorkerRegister.js" defer></script>
-        <ClientOnlyComponent /> {/* 在此处引入监控组件 */}
+        <ClarityScript /> {/* 在此处引入监控组件 */}
       </head>
       <body>{children}</body>
     </html>
