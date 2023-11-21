@@ -10,7 +10,8 @@ export const RUNTIME_CONFIG_DOM = "danger-runtime-config";
 
 export const DEFAULT_CORS_HOST = "https://a.nextweb.fun";
 // export const DEFAULT_API_HOST = `${DEFAULT_CORS_HOST}/api/proxy`;
-export const DEFAULT_API_HOST = "https://206.119.74.200";
+export const DEFAULT_API_HOST =
+  "https://api.yiios.com/proxy/https://api.openai.com";
 export const OPENAI_BASE_URL = "https://api.openai.com";
 
 export enum Path {
