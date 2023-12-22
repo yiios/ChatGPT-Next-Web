@@ -12,7 +12,7 @@ const en: LocaleType = {
       ? "Invalid API Key, please check it in [Settings](/#/settings) page.\nplease visit: [https://s.yiios.com](https://s.yiios.com) to repurchase."
       : "Unauthorized access, please enter your OpenAI API Key.\nplease visit: [https://s.yiios.com](https://s.yiios.com) to repurchase.",
     InsufficientQuota:
-      "Calls are frequent or account credit is exhausted. If the error is still reported after a minute of retrying, please visit: [https://s.yiios.com](https://s.yiios.com) Re-purchase.",
+      "Calls are frequent or your account has run out of credit. If you still get an error after one minute of retrying, please consider changing your key.",
   },
   Auth: {
     Title: "Need Access Code",

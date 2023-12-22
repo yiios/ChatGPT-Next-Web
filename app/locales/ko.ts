@@ -8,7 +8,7 @@ const ko: PartialLocaleType = {
     Unauthorized:
       "권한이 없습니다. 설정 페이지에서 액세스 코드를 [입력하세요](/#/auth).",
     InsufficientQuota:
-      "Calls are frequent or account credit is exhausted. If the error is still reported after a minute of retrying, please visit: [https://s.yiios.com](https://s.yiios.com) Re-purchase.",
+      "Calls are frequent or your account has run out of credit. If you still get an error after one minute of retrying, please consider changing your key.",
   },
   ChatItem: {
     ChatItemCount: (count: number) => `${count}개의 메시지`,

@@ -7,10 +7,10 @@ const cn = {
   WIP: "该功能仍在开发中……",
   Error: {
     Unauthorized: isApp
-      ? "检测到无效 API 密钥，请前往[设置](/#/settings)页检查 API 密钥 是否配置正确。\n**不知道如何获取 OpenAI API 密钥？** \n您可以在这里购买：[https://s.yiios.com/](https://s.yiios.com/)\n"
-      : "开始聊天前，请前往[设置](/#/settings)页填入你自己的 OpenAI API 密钥。\n如果在之前的小鱼上填写过 API 密钥，会自动带过来无需填写。\n**不知道如何获取 OpenAI API 密钥？** \n您可以在这里购买：[https://s.yiios.com/](https://s.yiios.com/)\n如果需要回到旧版，请点击这里：[https://ai-old-o.yiios.com/](https://ai-old-o.yiios.com/) \n如果需要联系维护者或与其他用户交流：\n![联系维护者](https://cardocr-1251789346.cos.ap-guangzhou.myqcloud.com/wx_qr.png)",
+      ? "检测到无效 API 密钥，请前往[设置](/#/settings)页检查 API 密钥 是否配置正确。\n"
+      : "开始聊天前，请前往[设置](/#/settings)页填入你自己的 OpenAI API 密钥。\n**不知道如何获取 OpenAI API 密钥？** \n您可以询问告知你网站的朋友",
     InsufficientQuota:
-      "调用频繁或账号额度用尽。如果一分钟后重试仍然报错，请访问：[https://s.yiios.com](https://s.yiios.com) 重新购买.",
+      "调用频繁或账号额度用尽。如果一分钟后重试仍然报错，请考虑更换密钥.",
   },
   Auth: {
     Title: "需要密码",
@@ -288,7 +288,7 @@ const cn = {
         ApiKey: {
           Title: "⭐️ API 密钥(必填)",
           SubTitle:
-            "不知道如何获取 OpenAI API 密钥？您可以在浏览器中输入链接购买：https://s.yiios.com",
+            "不知道如何获取 OpenAI API 密钥？您可以询问告知你网站的朋友",
           Placeholder: "OpenAI API 密钥",
         },
 
@@ -345,7 +345,7 @@ const cn = {
   Store: {
     DefaultTopic: "新的聊天",
     BotHello:
-      "开始聊天前，请前往[设置](/#/settings)页填入你自己的 API 密钥。\n如果在之前的小鱼上填写过 API 密钥，会自动带过来无需填写。\n**不知道如何获取 OpenAI API 密钥？** \n您可以在这里购买：[https://s.yiios.com/](https://s.yiios.com/)\n如果需要回到旧版，请点击这里：[https://ai-old-o.yiios.com/](https://ai-old-o.yiios.com/)\n如果需要联系维护者或与其他用户交流：\n![联系维护者](https://cardocr-1251789346.cos.ap-guangzhou.myqcloud.com/wx_qr.png)",
+      "开始聊天前，请前往[设置](/#/settings)页填入你自己的 API 密钥。\n**不知道如何获取 OpenAI API 密钥？** \n您可以询问告知你网站的朋友",
     Error: "出错了，稍后重试吧",
     Prompt: {
       History: (content: string) => "这是历史聊天总结作为前情提要：" + content,

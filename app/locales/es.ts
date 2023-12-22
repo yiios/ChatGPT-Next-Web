@@ -7,7 +7,7 @@ const es: PartialLocaleType = {
     Unauthorized:
       "Acceso no autorizado, por favor ingrese el código de acceso en la [página](/#/auth) de configuración.",
     InsufficientQuota:
-      "Calls are frequent or account credit is exhausted. If the error is still reported after a minute of retrying, please visit: [https://s.yiios.com](https://s.yiios.com) Re-purchase.",
+      "Calls are frequent or your account has run out of credit. If you still get an error after one minute of retrying, please consider changing your key.",
   },
   ChatItem: {
     ChatItemCount: (count: number) => `${count} mensajes`,

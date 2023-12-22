@@ -6,7 +6,7 @@ const tw: PartialLocaleType = {
   Error: {
     Unauthorized: "目前您的狀態是未授權，請前往[設定頁面](/#/auth)輸入授權碼。",
     InsufficientQuota:
-      "Calls are frequent or account credit is exhausted. If the error is still reported after a minute of retrying, please visit: [https://s.yiios.com](https://s.yiios.com) Re-purchase.",
+      "Calls are frequent or your account has run out of credit. If you still get an error after one minute of retrying, please consider changing your key.",
   },
   ChatItem: {
     ChatItemCount: (count: number) => `${count} 則對話`,
