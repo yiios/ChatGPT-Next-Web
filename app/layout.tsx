@@ -4,6 +4,10 @@ import "./styles/markdown.scss";
 import "./styles/highlight.scss";
 import { getClientConfig } from "./config/client";
 import { type Metadata } from "next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import { getServerSideConfig } from "./config/server";
+
+const serverConfig = getServerSideConfig();
 
 export const metadata: Metadata = {
   title: "小鱼智能客服",
@@ -45,7 +49,14 @@ export default function RootLayout({ children }: RootLayoutProps) {
           }}
         />
       </head>
-      <body>{children}</body>
+      <body>
+        {children}
+        {serverConfig?.isVercel && (
+          <>
+            <SpeedInsights />
+          </>
+        )}
+      </body>
     </html>
   );
 }
