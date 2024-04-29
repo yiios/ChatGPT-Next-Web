@@ -31,6 +31,7 @@ import { AuthPage } from "./auth";
 import { getClientConfig } from "../config/client";
 import { ClientApi } from "../client/api";
 import { useAccessStore } from "../store";
+import { identifyDefaultClaudeModel } from "../utils/checkers";
 
 export function Loading(props: { noLogo?: boolean }) {
   return (
@@ -175,6 +176,8 @@ export function useLoadData() {
   var api: ClientApi;
   if (config.modelConfig.model.startsWith("gemini")) {
     api = new ClientApi(ModelProvider.GeminiPro);
+  } else if (identifyDefaultClaudeModel(config.modelConfig.model)) {
+    api = new ClientApi(ModelProvider.Claude);
   } else {
     api = new ClientApi(ModelProvider.GPT);
   }
