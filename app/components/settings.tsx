@@ -41,6 +41,7 @@ import {
   useUpdateStore,
   useAccessStore,
   useAppConfig,
+  DEFAULT_OPENAI_URL,
 } from "../store";
 
 import Locale, {
@@ -627,6 +628,11 @@ export function Settings() {
       setLoadingUsage(false);
     });
   }
+  function fixErrorUrl() {
+    if (accessStore.openaiUrl != DEFAULT_OPENAI_URL) {
+      accessStore.update((access) => (access.openaiUrl = DEFAULT_OPENAI_URL));
+    }
+  }
 
   const enabledAccessControl = useMemo(
     () => accessStore.enabledAccessControl(),
@@ -644,6 +650,7 @@ export function Settings() {
     // checks per minutes
     checkUpdate();
     showUsage && checkUsage();
+    fixErrorUrl(); //修复错误的接口地址
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
