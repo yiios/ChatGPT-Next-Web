@@ -619,9 +619,9 @@ export function Settings() {
   };
   const [loadingUsage, setLoadingUsage] = useState(false);
   function checkUsage(force = false) {
-    if (shouldHideBalanceQuery) {
-      return;
-    }
+    // if (shouldHideBalanceQuery) {
+    //   return;
+    // }
 
     setLoadingUsage(true);
     updateStore.updateUsage(force).finally(() => {
