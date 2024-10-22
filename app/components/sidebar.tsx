@@ -4,6 +4,7 @@ import styles from "./home.module.scss";
 
 import { IconButton } from "./button";
 import SettingsIcon from "../icons/settings.svg";
+import StoreIcon from "../icons/store.svg";
 import FishIcon from "../icons/fish.svg";
 import AddIcon from "../icons/add.svg";
 import DeleteIcon from "../icons/delete.svg";
@@ -302,6 +303,15 @@ export function SideBar(props: { className?: string }) {
                   shadow
                 />
               </Link>
+            </div>
+            <div className={styles["sidebar-action"]}>
+              <a
+                href={`https://s.yiios.com/`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <IconButton icon={<StoreIcon />} shadow />
+              </a>
             </div>
           </>
         }
