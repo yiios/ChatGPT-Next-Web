@@ -157,8 +157,8 @@ export const useUpdateStore = createPersistStore(
         console.error((e as Error).message);
         showToast((e as Error).message);
         set(() => ({
-          used: 0,
-          subscription: 0,
+          used: undefined,
+          subscription: undefined,
         }));
       }
     },
