@@ -10,6 +10,7 @@ import { clientUpdate } from "../utils";
 import ChatGptIcon from "../icons/chatgpt.png";
 import Locale from "../locales";
 import { ClientApi } from "../client/api";
+import { showToast } from "../components/ui-lib";
 
 const ONE_MINUTE = 60 * 1000;
 const isApp = !!getClientConfig()?.isApp;
@@ -154,6 +155,11 @@ export const useUpdateStore = createPersistStore(
         }
       } catch (e) {
         console.error((e as Error).message);
+        showToast((e as Error).message);
+        set(() => ({
+          used: 0,
+          subscription: 0,
+        }));
       }
     },
   }),

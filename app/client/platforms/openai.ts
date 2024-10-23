@@ -397,7 +397,12 @@ export class ChatGPTApi implements LLMApi {
     ]);
 
     if (used.status === 401) {
-      throw new Error(Locale.Error.Unauthorized);
+      const errorData = await used.json();
+      if (errorData.error.message) {
+        throw new Error(errorData.error.message);
+      } else {
+        throw new Error(Locale.Error.Unauthorized);
+      }
     }
 
     if (!used.ok || !subs.ok) {
