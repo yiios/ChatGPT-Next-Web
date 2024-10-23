@@ -337,8 +337,7 @@ const cn = {
       OpenAI: {
         ApiKey: {
           Title: "⭐️ API 密钥(必填)",
-          SubTitle:
-            "不知道如何获取 OpenAI API 密钥？您可以询问告知你网站的朋友",
+          SubTitle: "密钥一般为 yiios- / sk- 开头的一串字符",
           Placeholder: "OpenAI API 密钥",
         },
 
